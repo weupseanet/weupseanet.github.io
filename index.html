@@ -39,15 +39,9 @@
       color: #7f8c8d;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* 可选：让页面更美观一点 */
     .card {
       background: white;
-      padding: 40px 60px;
+      padding: 50px 80px;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
@@ -56,12 +50,66 @@
     .card:hover {
       transform: translateY(-4px);
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 加载动画样式 */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #0984e3;
+    }
+
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 3px;
+      background-color: #0984e3;
+      border-radius: 50%;
+      animation: blink 1.4s infinite both;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes blink {
+      0%, 80%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      40% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Jgjingsgo_bot 已下线，请稍等...</h1>
     <p>By 2525 · C · Jgjingsgo_OJ</p>
+
+    <div class="loading">
+      重新连接中
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
   </div>
 
   <footer>© 2025 Jgjingsgo_OJ</footer>
