@@ -1,3 +1,9 @@
+---
+layout: post
+title: "ABC ATCODER R437 题解"
+date: 2025-12-24
+---
+
 ### A - Feet
 #### 题解
 答案为A * 12 + B = ans
