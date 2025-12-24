@@ -1,0 +1,15 @@
+/* 自定义博客样式 */
+body {
+  font-family: "Segoe UI", "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
