@@ -1,0 +1,34 @@
+title: Jgjingsgo_OJ
+description: "静态的在线测评系统"
+url: "https://weupseanet.github.io" 
+baseurl: ""
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "neon" 
+
+search: true
+search_full_content: false 
+search_provider: "lunr" 
+
+permalink: /:categories/:title/
+paginate: 5 
+paginate_path: /page:num/
+
+author:
+  name: "你的名字"
+  avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498" # 头像URL
+  bio: "国内“高质量”测评平台"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/weupseanet"
+
+# 导航栏（可选，显示顶部菜单）
+header:
+  links:
+    - label: "首页"
+      url: /
+    - label: "所有题目"
+      url: /posts/
+    - label: "注册&使用"
+      url: /about/

@@ -1,8 +1,19 @@
 ---
-layout: page
-title: 关于我
+layout: single
+title: "注册&使用"
 permalink: /about/
+author_profile: true
+search: true
 ---
 
-你好，我是 **weupseanet**，这是我的个人博客。在这里，我会分享一些编程心得、OJ题解和我生活中的点滴。  
-如果你有任何问题或想法，请通过 [email](mailto:sean2525by@outlook.com) 联系我。
+### 平台介绍
+这是一个“高质量”OJ。
+
+### 通道状态
+- 1.`Jgjingsgo_OJ_Github_Pages`:开放中
+- 2.`Jgjingsgo_OJ_main`:堵塞
+- 3.`Jgjingsgo_OJ_email_autoreturn`:可用..
+
+---
+
+So，你还不可以使用Jgjingsgo_OJ。
