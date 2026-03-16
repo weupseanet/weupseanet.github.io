@@ -1,32 +1,40 @@
+# 基础站点配置
 title: Jgjingsgo_OJ
 description: "静态的在线测评系统"
-url: "https://weupseanet.github.io" 
+url: "https://weupseanet.github.io"
 baseurl: ""
+repository: weupseanet/weupseanet.github.io
+github: [metadata]
 
-# 指定稳定版本的主题（避免兼容问题）
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-minimal_mistakes_skin: "neon" 
+# 主题配置（指定稳定版本，避免兼容问题）
+remote_theme: mmistakes/minimal-mistakes@4.22.0
+minimal_mistakes_skin: "default" # 先选默认皮肤，避免霓虹皮肤加载异常
 
-search: true
-search_full_content: false 
-search_provider: "lunr" 
+# 构建配置（Jekyll 必需）
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
+# 永久链接
 permalink: /:categories/:title/
-paginate: 5 
+paginate: 5
 paginate_path: /page:num/
 
+# 作者信息（修复层级，避免解析报错）
 author:
-  name: "你的名字"
+  name: "Jgjingsgo"
   avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
   bio: "国内“高质量”测评平台"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/weupseanet"
 
-# 修复导航栏语法（核心！）
+# 导航栏（Minimal Mistakes 强制要求 main 层级，且 title/url 格式）
 header:
-  main:  # 新增 main 层级
+  main:
     - title: "首页"
       url: /
     - title: "所有题目"
@@ -34,11 +42,25 @@ header:
     - title: "注册&使用"
       url: /about/
 
-# 新增 Minimal Mistakes 必要配置（避免渲染报错）
-include:
-  - _pages
+# 页脚配置
 footer:
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/weupseanet"
+
+# 搜索配置（简化，避免依赖报错）
+search: true
+search_provider: "lunr"
+search_full_content: false
+
+# 包含/排除文件（Jekyll 构建必需）
+include:
+  - _pages
+exclude:
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-cache
+  - .jekyll-metadata
+  - vendor
