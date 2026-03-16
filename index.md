@@ -1,11 +1,13 @@
 ---
 layout: home
-author_profile: true
-sidebar: true
-search: true
+title: 首页
+permalink: /
 ---
 
-# 欢迎来到Jgjingsgo_OJ
-通道还没开放哦~，再等等...
-本站管理员`XXW`，`LHY`，`ZYS`
-这是一个在线测评系统 -- OJ。面向OIer
+# Jgjingsgo_OJ
+## 静态在线测评系统
+欢迎使用本测评平台，支持在线刷题、代码提交与判题！
+
+### 快速开始
+1. 点击「所有题目」查看题库
+2. 点击「注册&使用」了解使用指南

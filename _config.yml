@@ -3,7 +3,8 @@ description: "静态的在线测评系统"
 url: "https://weupseanet.github.io" 
 baseurl: ""
 
-remote_theme: mmistakes/minimal-mistakes
+# 指定稳定版本的主题（避免兼容问题）
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: "neon" 
 
 search: true
@@ -16,19 +17,28 @@ paginate_path: /page:num/
 
 author:
   name: "你的名字"
-  avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498" # 头像URL
+  avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
   bio: "国内“高质量”测评平台"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/weupseanet"
 
-# 导航栏（可选，显示顶部菜单）
+# 修复导航栏语法（核心！）
 header:
-  links:
-    - label: "首页"
+  main:  # 新增 main 层级
+    - title: "首页"
       url: /
-    - label: "所有题目"
+    - title: "所有题目"
       url: /posts/
-    - label: "注册&使用"
+    - title: "注册&使用"
       url: /about/
+
+# 新增 Minimal Mistakes 必要配置（避免渲染报错）
+include:
+  - _pages
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/weupseanet"
