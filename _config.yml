@@ -8,7 +8,12 @@ github: [metadata]
 
 # 主题配置（指定稳定版本，避免兼容问题）
 remote_theme: mmistakes/minimal-mistakes@4.22.0
-minimal_mistakes_skin: "default" # 先选默认皮肤，避免霓虹皮肤加载异常
+minimal_mistakes_skin: "default"
+
+# 插件配置（必须添加）
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # 构建配置（Jekyll 必需）
 markdown: kramdown
@@ -26,7 +31,7 @@ paginate_path: /page:num/
 author:
   name: "Jgjingsgo"
   avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
-  bio: "国内“高质量”测评平台"
+  bio: "国内"高质量"测评平台"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
