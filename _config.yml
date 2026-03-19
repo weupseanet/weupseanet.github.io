@@ -4,18 +4,12 @@ description: "静态的在线测评系统"
 url: "https://weupseanet.github.io"
 baseurl: ""
 repository: weupseanet/weupseanet.github.io
-github: [metadata]
 
-# 主题配置（指定稳定版本，避免兼容问题）
-remote_theme: mmistakes/minimal-mistakes@4.22.0
+# 主题配置
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"
 
-# 插件配置（必须添加）
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
-# 构建配置（Jekyll 必需）
+# 构建配置
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -27,7 +21,7 @@ permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 
-# 作者信息（修复层级，避免解析报错）
+# 作者信息
 author:
   name: "Jgjingsgo"
   avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
@@ -37,7 +31,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/weupseanet"
 
-# 导航栏（Minimal Mistakes 强制要求 main 层级，且 title/url 格式）
+# 导航栏
 header:
   main:
     - title: "首页"
@@ -54,12 +48,12 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/weupseanet"
 
-# 搜索配置（简化，避免依赖报错）
+# 搜索配置
 search: true
 search_provider: "lunr"
 search_full_content: false
 
-# 包含/排除文件（Jekyll 构建必需）
+# 包含/排除文件
 include:
   - _pages
 exclude:
@@ -69,3 +63,5 @@ exclude:
   - .jekyll-cache
   - .jekyll-metadata
   - vendor
+  - Gemfile
+  - Gemfile.lock
