@@ -25,7 +25,7 @@ paginate_path: /page:num/
 author:
   name: "Jgjingsgo"
   avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
-  bio: "国内"高质量"测评平台"
+  bio: '国内"高质量"测评平台'
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
