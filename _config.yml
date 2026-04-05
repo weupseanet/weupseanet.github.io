@@ -1,6 +1,6 @@
 # 基础站点配置
-title: Jgjingsgo_OJ
-description: "静态的在线测评系统"
+title: Better-OI
+description: "OI讲解平台"
 url: "https://weupseanet.github.io"
 baseurl: ""
 repository: weupseanet/weupseanet.github.io
@@ -23,9 +23,9 @@ paginate_path: /page:num/
 
 # 作者信息
 author:
-  name: "Jgjingsgo"
+  name: "JGJGOI"
   avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
-  bio: '国内"高质量"测评平台'
+  bio: '你知道吗？？主编是Gay'
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -36,9 +36,9 @@ header:
   main:
     - title: "首页"
       url: /
-    - title: "所有题目"
+    - title: "所有文章"
       url: /posts/
-    - title: "注册&使用"
+    - title: "关于"
       url: /about/
 
 # 页脚配置
