@@ -24,7 +24,7 @@ paginate_path: /page:num/
 # 作者信息
 author:
   name: "JGJGOI"
-  avatar: "https://cravatar.cn/avatar/e7956356a5d3e33eb79167720a2b3498"
+  avatar: "http://cddcoj.top:8023/pictures/UOJ.png"
   bio: '你知道吗？？主编是Gay'
   links:
     - label: "GitHub"
