@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "所有题目"
+title: "所有文章"
 permalink: /posts/
 author_profile: true
 sidebar: true
